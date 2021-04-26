@@ -57,10 +57,10 @@ function showTime() {
 		weekday[today.getDay()] + ' ' + // Weekday
 		month[today.getMonth()] + ' ' + // Month
 		today.getDate() + ' ' + // Day
+		today.getFullYear() + '<br>' + // Year
 		today.getHours() + ':' + // Hours
 		addZero(today.getMinutes()) + ':' + // Minutes
-		addZero(today.getSeconds()) + ' ' + // Secs
-		today.getFullYear(); // Year
+		addZero(today.getSeconds()); // Secs
 
 	// Output Time
 	time.innerHTML = `${timestring}`;
