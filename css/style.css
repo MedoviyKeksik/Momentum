@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+	color: white;
+	transition: background-image 1s ease-in-out;
+	background-position: center;
+	text-shadow: black 0 0 0.1rem;
+}
+
+#name, #focus, #city {
+	display: inline-block;
+}
+
+#time {
+	font-size: 8rem;
+}
+
+h1 {
+	margin-bottom: 3rem;
+}
+
+h2 {
+	margin-bottom: 0.5rem;
+}
+
+h2#quote {
+	opacity: 1;
+}
+
+button {
+	border: none;
+	font-size: 1rem;
+	padding: 0.3em;
+	color: white;
+	background-color: unset;
+	border-bottom: 1px solid transparent;
+	transition: border ease-in-out 0.3s;
+}
+
+button:hover {
+	border-bottom: 1px solid white;
+}
+
+button:active {
+	color: rgb(230, 230, 230);
+	border-color: rgb(230, 230, 230);
+	outline: none;
+}
+
+#weather-icon, #city, #temperature, #description {
+	font-size: 2rem;	
+}
+
+.main {
+	margin: auto;
+}
+
+.weather {
+	margin-bottom: 1rem;
+}
+
+#weather-icon {
+	margin: 0 1rem;
+}
+
+@media(max-width: 800px) {
+	#time {
+		font-size: 4.5rem;
+	}
+
+	#weather-icon, #city, #temperature, #description {
+		font-size: 1.5rem;
+	}
+}
+
+@media(max-width: 500px) {
+	#time {
+		font-size: 3rem;
+	}
+	h2 {
+		font-size: 1rem;
+	}
+	#weather-icon, #city, #temperature, #description {
+		font-size: 1rem;
+	}
+	#weather-icon {
+		margin: 0 0.3rem;
+	}
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome</title>
+	<link rel="stylesheet" href="css/owfont-regular.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main">
+		<time id="time"></time>
+		<h1>
+			<span id="greeting"></span>
+			<span id="name" contenteditable="true"></span>
+		</h1>
+		<h2>What Is Your Focus For Today?</h2>
+		<h2 id="focus" contenteditable="true"></h2>
+		<h2 id="quote"></h3>
+		<div class="container">
+			<button id="background-change">Next background</button>
+			<span>|</span>
+			<button id="quote-change">Next quote</button>
+		</div>
+	</div>
+	<div class="weather">
+		<span id="city" contenteditable="true"></span>
+		<div class="weather-info">
+			<span id="temperature"></span>
+			<i id="weather-icon" class="owf"></i>
+			<span id="description"></span>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
