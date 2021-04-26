@@ -223,7 +223,8 @@ async function getQuote() {
 var APIKey = '30c15b7a3a24e78c3e199d9d7a6d68d7';
 
 async function getWeather() {
-	if (city.textContent !== '' || city.textContent !== '[Enter City]') {
+	console.log(city.textContent);
+	if (city.textContent !== '' && city.textContent !== '[Enter City]') {
 		const url = `https://api.openweathermap.org/data/2.5/weather?q=${city.textContent}&appid=${APIKey}&units=metric`;
 		const res = await fetch(url);
 		const data = await res.json(); 
